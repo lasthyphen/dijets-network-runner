@@ -1,4 +1,4 @@
-# Avalanche Network Runner
+# Dijets Network Runner
 
 ## Note
 
@@ -8,7 +8,7 @@ Nonetheless, this README should provide valuable information about using this to
 
 ## Overview
 
-This is a tool to run and interact with a local Avalanche network.
+This is a tool to run and interact with a local Dijets network.
 This tool may be especially useful for development and testing.
 
 
@@ -98,7 +98,7 @@ avalanche-network-runner ping \
 --endpoint="0.0.0.0:8080"
 ```
 
-To start a new Avalanche network with five nodes (a cluster):
+To start a new Dijets network with five nodes (a cluster):
 
 ```bash
 # replace execPath with the path to AvalancheGo on your machine
@@ -740,7 +740,7 @@ To create a new network from a snapshot, the function `NewNetworkFromSnapshot` i
 The network runner allows users to interact with an AvalancheGo network using the `network.Network` interface:
 
 ```go
-// Network is an abstraction of an Avalanche network
+// Network is an abstraction of an Dijets network
 type Network interface {
 	// Returns nil if all the nodes in the network are healthy.
 	// A stopped network is considered unhealthy.
@@ -784,7 +784,7 @@ type Node interface {
 	// Return this node's name, which is unique
 	// across all the nodes in its network.
 	GetName() string
-	// Return this node's Avalanche node ID.
+	// Return this node's Dijets node ID.
 	GetNodeID() ids.ShortID
 	// Return a client that can be used to make API calls.
 	GetAPIClient() api.Client
