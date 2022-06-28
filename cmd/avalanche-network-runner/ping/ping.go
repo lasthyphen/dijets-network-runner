@@ -7,9 +7,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/ava-labs/avalanche-network-runner/client"
-	"github.com/ava-labs/avalanche-network-runner/pkg/color"
-	"github.com/ava-labs/avalanche-network-runner/pkg/logutil"
+	"github.com/lasthyphen/dijets-network-runner/client"
+	"github.com/lasthyphen/dijets-network-runner/pkg/color"
+	"github.com/lasthyphen/dijets-network-runner/pkg/logutil"
 	"github.com/spf13/cobra"
 )
 

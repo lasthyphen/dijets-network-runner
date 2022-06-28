@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/avalanche-network-runner/pkg/color"
-	"github.com/ava-labs/avalanche-network-runner/rpcpb"
-	"github.com/ava-labs/avalanche-network-runner/utils"
+	"github.com/lasthyphen/dijets-network-runner/pkg/color"
+	"github.com/lasthyphen/dijets-network-runner/rpcpb"
+	"github.com/lasthyphen/dijets-network-runner/utils"
 	"github.com/lasthyphen/dijetsgo/config"
 	"github.com/lasthyphen/dijetsgo/genesis"
 	"github.com/lasthyphen/dijetsgo/ids"

@@ -17,7 +17,7 @@ This tool may be especially useful for development and testing.
 ### Download
 
 ```sh
-git clone https://github.com/ava-labs/avalanche-network-runner.git
+git clone https://github.com/lasthyphen/dijets-network-runner.git
 ```
 
 ### Run Unit Tests
@@ -66,11 +66,11 @@ This creates an RPC server that you can send requests to in order to start a net
 
 ## `network-runner` RPC server: examples
 
-Download from https://github.com/ava-labs/avalanche-network-runner/releases:
+Download from https://github.com/lasthyphen/dijets-network-runner/releases:
 
 ```bash
 # or install
-cd ${HOME}/go/src/github.com/ava-labs/avalanche-network-runner
+cd ${HOME}/go/src/github.com/lasthyphen/dijets-network-runner
 go install -v ./cmd/avalanche-network-runner
 ```
 
@@ -391,11 +391,11 @@ avalanche-network-runner control stop \
 
 ## `network-runner` RPC server: `subnet-evm` example
 
-Download from https://github.com/ava-labs/avalanche-network-runner/releases:
+Download from https://github.com/lasthyphen/dijets-network-runner/releases:
 
 ```bash
 # or install
-cd ${HOME}/go/src/github.com/ava-labs/avalanche-network-runner
+cd ${HOME}/go/src/github.com/lasthyphen/dijets-network-runner
 go install -v ./cmd/avalanche-network-runner
 ```
 
@@ -513,11 +513,11 @@ curl -X POST -k http://localhost:8081/v1/control/status -d ''
 
 ## `network-runner` RPC server: `blobvm` example
 
-Download from https://github.com/ava-labs/avalanche-network-runner/releases:
+Download from https://github.com/lasthyphen/dijets-network-runner/releases:
 
 ```bash
 # or install
-cd ${HOME}/go/src/github.com/ava-labs/avalanche-network-runner
+cd ${HOME}/go/src/github.com/lasthyphen/dijets-network-runner
 go install -v ./cmd/avalanche-network-runner
 ```
 

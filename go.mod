@@ -1,10 +1,10 @@
-module github.com/ava-labs/avalanche-network-runner
+module github.com/lasthyphen/dijets-network-runner
 
-go 1.17
+go 1.16
 
 require (
-	github.com/lasthyphen/dijetsgo v1.7.13
-	github.com/lasthyphen/dijeth v0.8.12-rc.1
+	github.com/lasthyphen/dijigo v0.2.1
+	github.com/lasthyphen/coreth v1.0.2
 	github.com/ethereum/go-ethereum v1.10.16
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.10.3
 	github.com/onsi/ginkgo/v2 v2.1.3

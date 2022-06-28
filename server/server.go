@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/avalanche-network-runner/network/node"
-	"github.com/ava-labs/avalanche-network-runner/rpcpb"
-	"github.com/ava-labs/avalanche-network-runner/utils"
+	"github.com/lasthyphen/dijets-network-runner/network/node"
+	"github.com/lasthyphen/dijets-network-runner/rpcpb"
+	"github.com/lasthyphen/dijets-network-runner/utils"
 	"github.com/lasthyphen/dijetsgo/message"
 	"github.com/lasthyphen/dijetsgo/network/peer"
 	"github.com/lasthyphen/dijetsgo/snow/networking/router"

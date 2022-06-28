@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/avalanche-network-runner/api"
+	"github.com/lasthyphen/dijets-network-runner/api"
 	"github.com/lasthyphen/dijetsgo/config"
 	"github.com/lasthyphen/dijetsgo/ids"
 	"github.com/lasthyphen/dijetsgo/network/peer"

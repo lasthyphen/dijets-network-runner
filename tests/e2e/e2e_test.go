@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-network-runner/client"
-	"github.com/ava-labs/avalanche-network-runner/pkg/color"
-	"github.com/ava-labs/avalanche-network-runner/pkg/logutil"
-	"github.com/ava-labs/avalanche-network-runner/server"
-	"github.com/ava-labs/avalanche-network-runner/utils"
+	"github.com/lasthyphen/dijets-network-runner/client"
+	"github.com/lasthyphen/dijets-network-runner/pkg/color"
+	"github.com/lasthyphen/dijets-network-runner/pkg/logutil"
+	"github.com/lasthyphen/dijets-network-runner/server"
+	"github.com/lasthyphen/dijets-network-runner/utils"
 
 	"github.com/lasthyphen/dijetsgo/api/admin"
 	"github.com/lasthyphen/dijetsgo/ids"

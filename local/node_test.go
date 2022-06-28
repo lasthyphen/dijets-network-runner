@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-network-runner/network/node"
+	"github.com/lasthyphen/dijets-network-runner/network/node"
 	"github.com/lasthyphen/dijetsgo/ids"
 	"github.com/lasthyphen/dijetsgo/message"
 	"github.com/lasthyphen/dijetsgo/network/peer"
