@@ -3,15 +3,15 @@ package api
 import (
 	"fmt"
 
-	"github.com/lasthyphen/dijetsgo/api/admin"
-	"github.com/lasthyphen/dijetsgo/api/health"
-	"github.com/lasthyphen/dijetsgo/api/info"
-	"github.com/lasthyphen/dijetsgo/api/ipcs"
-	"github.com/lasthyphen/dijetsgo/api/keystore"
-	"github.com/lasthyphen/dijetsgo/indexer"
-	"github.com/lasthyphen/dijetsgo/vms/avm"
-	"github.com/lasthyphen/dijetsgo/vms/platformvm"
-	"github.com/lasthyphen/dijeth/plugin/evm"
+	"github.com/lasthyphen/dijigo/api/admin"
+	"github.com/lasthyphen/dijigo/api/health"
+	"github.com/lasthyphen/dijigo/api/info"
+	"github.com/lasthyphen/dijigo/api/ipcs"
+	"github.com/lasthyphen/dijigo/api/keystore"
+	"github.com/lasthyphen/dijigo/indexer"
+	"github.com/lasthyphen/dijigo/vms/avm"
+	"github.com/lasthyphen/dijigo/vms/platformvm"
+	"github.com/lasthyphen/coreth/plugin/evm"
 )
 
 // interface compliance

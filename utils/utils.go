@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/staking"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/staking"
 )
 
 const genesisNetworkIDKey = "networkID"

@@ -16,11 +16,11 @@ import (
 	"github.com/lasthyphen/dijets-network-runner/network"
 	"github.com/lasthyphen/dijets-network-runner/pkg/color"
 	"github.com/lasthyphen/dijets-network-runner/rpcpb"
-	"github.com/lasthyphen/dijetsgo/config"
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/network/peer"
-	"github.com/lasthyphen/dijetsgo/utils/constants"
-	"github.com/lasthyphen/dijetsgo/utils/logging"
+	"github.com/lasthyphen/dijigo/config"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/network/peer"
+	"github.com/lasthyphen/dijigo/utils/constants"
+	"github.com/lasthyphen/dijigo/utils/logging"
 	"go.uber.org/zap"
 )
 

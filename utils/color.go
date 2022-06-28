@@ -6,7 +6,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/lasthyphen/dijetsgo/utils/logging"
+	"github.com/lasthyphen/dijigo/utils/logging"
 )
 
 var supportedColors = []logging.Color{

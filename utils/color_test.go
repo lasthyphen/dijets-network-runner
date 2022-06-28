@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lasthyphen/dijetsgo/utils/logging"
+	"github.com/lasthyphen/dijigo/utils/logging"
 )
 
 // TestColorAssignment tests that each color assignment is different and that it "wraps"

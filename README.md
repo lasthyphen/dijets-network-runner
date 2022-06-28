@@ -102,7 +102,7 @@ To start a new Dijets network with five nodes (a cluster):
 
 ```bash
 # replace execPath with the path to AvalancheGo on your machine
-# e.g., ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/avalanchego
+# e.g., ${HOME}/go/src/github.com/lasthyphen/dijigo/build/avalanchego
 AVALANCHEGO_EXEC_PATH="avalanchego"
 
 curl -X POST -k http://localhost:8081/v1/control/start -d '{"execPath":"'${AVALANCHEGO_EXEC_PATH}'","numNodes":5,"logLevel":"INFO"}'
@@ -288,7 +288,7 @@ avalanche-network-runner control remove-node \
 To restart a node (in this case, the one named `node1`):
 
 ```bash
-# e.g., ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/avalanchego
+# e.g., ${HOME}/go/src/github.com/lasthyphen/dijigo/build/avalanchego
 AVALANCHEGO_EXEC_PATH="avalanchego"
 
 # Note that you can restart the node with a different binary by providing
@@ -307,7 +307,7 @@ avalanche-network-runner control restart-node \
 To add a node (in this case, a new node named `node99`):
 
 ```bash
-# e.g., ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/avalanchego
+# e.g., ${HOME}/go/src/github.com/lasthyphen/dijigo/build/avalanchego
 AVALANCHEGO_EXEC_PATH="avalanchego"
 
 # Note that you can add the new node with a different binary by providing
@@ -345,7 +345,7 @@ See the [subnet](#network-runner-rpc-server-subnet-evm-example) section for deta
 `--plugin-dir`
 
 AvalancheGo exposes a "test peer", which you can attach to a node.
-(See [here](https://github.com/lasthyphen/dijetsgo/blob/master/network/peer/test_peer.go) for more information.)
+(See [here](https://github.com/lasthyphen/dijigo/blob/master/network/peer/test_peer.go) for more information.)
 You can send messages through the test peer to the node it is attached to.
 
 To attach a test peer to a node (in this case, `node1`):
@@ -420,20 +420,20 @@ go install -v .
 subnet-cli create VMID subnetevm
 # srEXiWaHuhNyGwPUi444Tu47ZEDwxTWrbQiuD7FmgSAQ6X7Dy
 
-# download from https://github.com/lasthyphen/dijetsgo/releases
+# download from https://github.com/lasthyphen/dijigo/releases
 # or build
-rm -rf ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build
-cd ${HOME}/go/src/github.com/lasthyphen/dijetsgo
+rm -rf ${HOME}/go/src/github.com/lasthyphen/dijigo/build
+cd ${HOME}/go/src/github.com/lasthyphen/dijigo
 ./scripts/build.sh
 
 # ref. https://github.com/ava-labs/subnet-evm/blob/b69e47e0398b5237cda0422f6a32969e64bde346/scripts/run.sh
 cd ${HOME}/go/src/github.com/ava-labs/subnet-evm
 go build -v \
--o ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/plugins/srEXiWaHuhNyGwPUi444Tu47ZEDwxTWrbQiuD7FmgSAQ6X7Dy \
+-o ${HOME}/go/src/github.com/lasthyphen/dijigo/build/plugins/srEXiWaHuhNyGwPUi444Tu47ZEDwxTWrbQiuD7FmgSAQ6X7Dy \
 ./plugin
 
 # make sure binaries are built
-find ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build
+find ${HOME}/go/src/github.com/lasthyphen/dijigo/build
 # for example
 # .../build
 # .../build/plugins
@@ -492,8 +492,8 @@ cat /tmp/subnet-evm.genesis.json
 
 ```bash
 # replace execPath with the path to AvalancheGo on your machine
-AVALANCHEGO_EXEC_PATH="${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/avalanchego"
-AVALANCHEGO_PLUGIN_PATH="${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/plugins"
+AVALANCHEGO_EXEC_PATH="${HOME}/go/src/github.com/lasthyphen/dijigo/build/avalanchego"
+AVALANCHEGO_PLUGIN_PATH="${HOME}/go/src/github.com/lasthyphen/dijigo/build/plugins"
 
 curl -X POST -k http://localhost:8081/v1/control/start -d '{"execPath":"'${AVALANCHEGO_EXEC_PATH}'","numNodes":5,"logLevel":"INFO","pluginDir":"'${AVALANCHEGO_PLUGIN_PATH}'","customVms":{"subnetevm":"/tmp/subnet-evm.genesis.json"}}'
 
@@ -542,19 +542,19 @@ go install -v .
 subnet-cli create VMID blobvm
 # kM6h4LYe3AcEU1MB2UNg6ubzAiDAALZzpVrbX8zn3hXF6Avd8
 
-# download from https://github.com/lasthyphen/dijetsgo/releases
+# download from https://github.com/lasthyphen/dijigo/releases
 # or build
-rm -rf ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build
-cd ${HOME}/go/src/github.com/lasthyphen/dijetsgo
+rm -rf ${HOME}/go/src/github.com/lasthyphen/dijigo/build
+cd ${HOME}/go/src/github.com/lasthyphen/dijigo
 ./scripts/build.sh
 
 cd ${HOME}/go/src/github.com/ava-labs/blobvm
 go build -v \
--o ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/plugins/kM6h4LYe3AcEU1MB2UNg6ubzAiDAALZzpVrbX8zn3hXF6Avd8 \
+-o ${HOME}/go/src/github.com/lasthyphen/dijigo/build/plugins/kM6h4LYe3AcEU1MB2UNg6ubzAiDAALZzpVrbX8zn3hXF6Avd8 \
 ./cmd/blobvm
 
 # make sure binaries are built
-find ${HOME}/go/src/github.com/lasthyphen/dijetsgo/build
+find ${HOME}/go/src/github.com/lasthyphen/dijigo/build
 # for example
 # .../build
 # .../build/plugins
@@ -572,8 +572,8 @@ cat /tmp/blobvm.genesis.json
 
 ```bash
 # replace execPath with the path to AvalancheGo on your machine
-AVALANCHEGO_EXEC_PATH="${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/avalanchego"
-AVALANCHEGO_PLUGIN_PATH="${HOME}/go/src/github.com/lasthyphen/dijetsgo/build/plugins"
+AVALANCHEGO_EXEC_PATH="${HOME}/go/src/github.com/lasthyphen/dijigo/build/avalanchego"
+AVALANCHEGO_PLUGIN_PATH="${HOME}/go/src/github.com/lasthyphen/dijigo/build/plugins"
 
 curl -X POST -k http://localhost:8081/v1/control/start -d '{"execPath":"'${AVALANCHEGO_EXEC_PATH}'","numNodes":5,"logLevel":"INFO","pluginDir":"'${AVALANCHEGO_PLUGIN_PATH}'","customVms":{"blobvm":"/tmp/blobvm.genesis.json"}}'
 

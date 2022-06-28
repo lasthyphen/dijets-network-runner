@@ -7,14 +7,14 @@ import (
 	"context"
 	"time"
 
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/utils/constants"
-	"github.com/lasthyphen/dijetsgo/vms/avm"
-	"github.com/lasthyphen/dijetsgo/vms/platformvm"
-	"github.com/lasthyphen/dijetsgo/vms/secp256k1fx"
-	"github.com/lasthyphen/dijetsgo/wallet/chain/p"
-	"github.com/lasthyphen/dijetsgo/wallet/chain/x"
-	"github.com/lasthyphen/dijetsgo/wallet/subnet/primary"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/utils/constants"
+	"github.com/lasthyphen/dijigo/vms/avm"
+	"github.com/lasthyphen/dijigo/vms/platformvm"
+	"github.com/lasthyphen/dijigo/vms/secp256k1fx"
+	"github.com/lasthyphen/dijigo/wallet/chain/p"
+	"github.com/lasthyphen/dijigo/wallet/chain/x"
+	"github.com/lasthyphen/dijigo/wallet/subnet/primary"
 )
 
 const defaultTimeout = time.Minute

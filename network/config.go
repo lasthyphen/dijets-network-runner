@@ -9,11 +9,11 @@ import (
 
 	"github.com/lasthyphen/dijets-network-runner/network/node"
 	"github.com/lasthyphen/dijets-network-runner/utils"
-	"github.com/lasthyphen/dijetsgo/genesis"
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/utils/constants"
-	"github.com/lasthyphen/dijetsgo/utils/formatting/address"
-	"github.com/lasthyphen/dijetsgo/utils/units"
+	"github.com/lasthyphen/dijigo/genesis"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/utils/constants"
+	"github.com/lasthyphen/dijigo/utils/formatting/address"
+	"github.com/lasthyphen/dijigo/utils/units"
 )
 
 var cChainConfig map[string]interface{}

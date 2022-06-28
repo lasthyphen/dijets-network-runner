@@ -11,7 +11,7 @@ import (
 
 	"github.com/lasthyphen/dijets-network-runner/local"
 	"github.com/lasthyphen/dijets-network-runner/network"
-	"github.com/lasthyphen/dijetsgo/utils/logging"
+	"github.com/lasthyphen/dijigo/utils/logging"
 )
 
 const (
@@ -58,7 +58,7 @@ func main() {
 	if goPath == "" {
 		goPath = build.Default.GOPATH
 	}
-	binaryPath := fmt.Sprintf("%s%s", goPath, "/src/github.com/lasthyphen/dijetsgo/build/avalanchego")
+	binaryPath := fmt.Sprintf("%s%s", goPath, "/src/github.com/lasthyphen/dijigo/build/avalanchego")
 	if err := run(log, binaryPath); err != nil {
 		log.Fatal("%s", err)
 		os.Exit(1)

@@ -6,10 +6,10 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijeth/core/types"
-	"github.com/lasthyphen/dijeth/ethclient"
-	"github.com/lasthyphen/dijeth/interfaces"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/coreth/core/types"
+	"github.com/lasthyphen/coreth/ethclient"
+	"github.com/lasthyphen/coreth/interfaces"
 	"github.com/ethereum/go-ethereum/common"
 )
 

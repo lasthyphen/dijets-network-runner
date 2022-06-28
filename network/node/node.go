@@ -7,10 +7,10 @@ import (
 	"fmt"
 
 	"github.com/lasthyphen/dijets-network-runner/api"
-	"github.com/lasthyphen/dijetsgo/config"
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/network/peer"
-	"github.com/lasthyphen/dijetsgo/snow/networking/router"
+	"github.com/lasthyphen/dijigo/config"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/network/peer"
+	"github.com/lasthyphen/dijigo/snow/networking/router"
 )
 
 // Node represents an AvalancheGo node
