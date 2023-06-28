@@ -2,7 +2,7 @@
 set -e
 
 PROJECT_NAME=dijets-network-runner
-OWNER=MetalBlockchain
+OWNER=lasthyphen
 REPO="dijets-network-runner"
 BINARY=dijets-network-runner
 FORMAT=tar.gz
