@@ -6,7 +6,7 @@ require (
 	github.com/ethereum/go-ethereum v1.10.26
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.15.0
 	github.com/lasthyphen/dijetsnode v1.9.8
-	github.com/lasthyphen/utilitychain v0.11.7-rc.0
+	github.com/lasthyphen/utilitychain v0.11.7
 	github.com/onsi/ginkgo/v2 v2.7.0
 	github.com/onsi/gomega v1.25.0
 	github.com/otiai10/copy v1.9.0
