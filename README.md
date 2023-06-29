@@ -2,7 +2,7 @@
 
 ## Note
 
-This tool is under heavy development and the documentation/code snippets below may vary slightly from the actual code in the repository. Updates to the documentation may happen some time after an update to the codebase. Nonetheless, this README should provide valuable information about using this tool.
+Dijets Network Runner (dijets-network-runner) is currently in Alpha and under heavy development. Note that the documentation/code snippets below may vary slightly from the actual code in the repository. Updates to the documentation may happen some time after an update to the codebase. Nonetheless, this README should provide valuable information and guides about using this tool.
 
 ## Overview
 
@@ -352,7 +352,7 @@ Then a blockchain with different chain configs per node can be created with this
 curl -X POST -k http://localhost:8081/v1/control/createblockchains -d '{"pluginDir":"'$PLUGIN_DIR'","blockchainSpecs":[{"vm_name":"'$VM_NAME'","genesis":"'$GENESIS_PATH'", "subnet_id": "'$SUBNET_ID'", "per_node_chain_config": "'$PER_NODE_CHAIN_CONFIG'", "network_upgrade": "'$NETWORK_UPGRADE_PATH'", "subnet_config": "'$SUBNET_CONFIG_PATH'"}]}'
 
 # or
-avalanche-network-runner control create-blockchains '[{"vm_name":"'$VM_NAME'","genesis":"'$GENESIS_PATH'", "subnet_id": "'$SUBNET_ID'", "per_node_chain_config": "'$PER_NODE_CHAIN_CONFIG'", "network_upgrade": "'$NETWORK_UPGRADE_PATH'", "subnet_config": "'$SUBNET_CONFIG_PATH'"}]' --plugin-dir $PLUGIN_DIR
+dijets-network-runner control create-blockchains '[{"vm_name":"'$VM_NAME'","genesis":"'$GENESIS_PATH'", "subnet_id": "'$SUBNET_ID'", "per_node_chain_config": "'$PER_NODE_CHAIN_CONFIG'", "network_upgrade": "'$NETWORK_UPGRADE_PATH'", "subnet_config": "'$SUBNET_CONFIG_PATH'"}]' --plugin-dir $PLUGIN_DIR
 ```
 
 To remove (stop) a node:
