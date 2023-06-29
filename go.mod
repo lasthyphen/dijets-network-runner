@@ -3,10 +3,10 @@ module github.com/lasthyphen/dijets-network-runner
 go 1.18
 
 require (
-	github.com/lasthyphen/utilitychain v0.11.7-rc.0
-	github.com/lasthyphen/dijetsnode v1.9.8
 	github.com/ethereum/go-ethereum v1.10.26
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.15.0
+	github.com/lasthyphen/dijetsnode v1.9.8
+	github.com/lasthyphen/utilitychain v0.11.7-rc.0
 	github.com/onsi/ginkgo/v2 v2.7.0
 	github.com/onsi/gomega v1.25.0
 	github.com/otiai10/copy v1.9.0
@@ -16,7 +16,7 @@ require (
 	github.com/stretchr/testify v1.8.1
 	go.uber.org/zap v1.24.0
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
-	golang.org/x/sync v0.1.0
+	golang.org/x/sync v0.3.0
 	google.golang.org/genproto v0.0.0-20221207170731-23e4bf6bdc37
 	google.golang.org/grpc v1.53.0-dev
 	google.golang.org/protobuf v1.28.1
